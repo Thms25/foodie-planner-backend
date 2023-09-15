@@ -4185,3 +4185,19 @@ FOREIGN KEY ("blob_id")
   [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
 [36m  Cloudinary Storage (1021.1ms) [0m[32mUploaded file to key: 5qhexo6mwzwv936mzietj08slvzn (checksum: PCGLbtrImHi6Qgu0owLdNg==)[0m
 [ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 34228d85-b197-4202-baac-91a59d7f71fe) to Async(default) with arguments: #<GlobalID:0x0000000112c30dd0 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/80>>
+Started GET "/api/v1/recipes" for ::1 at 2023-09-15 19:00:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 56ms (Views: 51.8ms | ActiveRecord: 0.7ms | Allocations: 20824)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-15 19:03:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.5ms | Allocations: 20822)
+
+
