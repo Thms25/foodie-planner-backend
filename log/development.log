@@ -4201,3 +4201,70 @@ Processing by Api::V1::RecipesController#index as HTML
 Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.5ms | Allocations: 20822)
 
 
+Started GET "/api/v1/recipes" for ::1 at 2023-09-15 19:26:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 85ms (Views: 60.8ms | ActiveRecord: 1.5ms | Allocations: 20825)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-09-15 19:26:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2023-09-17 12:24:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/thomasallen/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/thomasallen/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.6ms | Allocations: 528)
+Completed 200 OK in 98ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 4311)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:27:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 82ms (Views: 63.3ms | ActiveRecord: 1.7ms | Allocations: 20824)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-09-17 18:27:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:27:56 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 12110)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:28:05 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 11946)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:38:09 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.1ms | Allocations: 12148)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:38:09 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 11946)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-17 18:38:13 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 11934)
+
+
