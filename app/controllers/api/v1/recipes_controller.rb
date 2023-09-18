@@ -14,7 +14,7 @@ class Api::V1::RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
 
     if @recipe.save!
-      render json: @recipe #, status :created, location: @recipe
+      render json: @recipe #, status: :created, location: api_v1_post_url(@recipe)
     else
       render json: @recipe.errors # status: :unprocessable_entity
     end
@@ -35,7 +35,7 @@ class Api::V1::RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :description, :prep_time, :rating, :servings, :category)
+    params.require(:recipe).permit(:title, :description, :prep_time, :rating, :servings, :category)
   end
 
   def set_recipe

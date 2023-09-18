@@ -4333,3 +4333,933 @@ Processing by Api::V1::RecipesController#index as */*
 Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 1.0ms | Allocations: 16042)
 
 
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:29:57 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.8ms | Allocations: 12137)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:29:59 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:30:17 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:41:36 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.8ms | Allocations: 12121)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:41:39 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:43:49 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:43:52 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 13:48:31 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 3127)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:48:38 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 11983)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 13:49:16 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 14:02:03 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 863)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 14:07:28 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 672)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 14:07:32 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 14:08:08 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-18 14:08:19 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:08:30 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 12005)
+
+
+Started GET "/api/v1/recipes/139" for ::1 at 2023-09-18 14:08:33 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"139"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:08:51 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.7ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:13:27 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:18:48 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 12121)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:20:02 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:20:05 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:20:07 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:30:44 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.7ms | Allocations: 12120)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:31:38 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:02 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:13 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:17 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:19 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:26 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11965)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 14:32:28 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 15:25:30 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.7ms | Allocations: 12120)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 15:32:22 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.2ms | Allocations: 12120)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:04:54 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"recipe"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 219)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/api/v1/recipes_controller.rb:38:in `recipe_params'
+app/controllers/api/v1/recipes_controller.rb:14:in `create'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:05:19 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.3ms | Allocations: 12120)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:05:24 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"recipe"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 140)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/api/v1/recipes_controller.rb:38:in `recipe_params'
+app/controllers/api/v1/recipes_controller.rb:14:in `create'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:09:58 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 1.0ms | Allocations: 11963)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:11:20 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.4ms | Allocations: 11965)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:12:13 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"recipe"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 140)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/api/v1/recipes_controller.rb:38:in `recipe_params'
+app/controllers/api/v1/recipes_controller.rb:14:in `create'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:12:48 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.9ms | Allocations: 11964)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:12:54 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"recipe"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 140)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: recipe):
+  
+app/controllers/api/v1/recipes_controller.rb:38:in `recipe_params'
+app/controllers/api/v1/recipes_controller.rb:14:in `create'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:13:21 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.7ms | Allocations: 11964)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:13:25 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"hello 7", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"hello 7", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011210c148>, params: {"title"=>"hello 7", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"hello 7", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (2.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:13:25.186965"], ["updated_at", "2023-09-18 14:13:25.186965"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 2747)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:13:43 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.7ms | Allocations: 12092)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:17:03 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test number 8", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test number 8", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011229c148>, params: {"title"=>"test number 8", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test number 8", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:17:03.928814"], ["updated_at", "2023-09-18 14:17:03.928814"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 2073)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:17:30 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test number 9", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test number 9", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x00000001122b5148>, params: {"title"=>"test number 9", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test number 9", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:17:30.850615"], ["updated_at", "2023-09-18 14:17:30.850615"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 2073)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:22:41 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"this is a great recipe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"this is a great recipe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011231e080>, params: {"title"=>"this is a great recipe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"this is a great recipe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:22:41.543810"], ["updated_at", "2023-09-18 14:22:41.543810"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.9ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/144" for ::1 at 2023-09-18 16:22:58 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"144"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 698)
+
+
+Started GET "/api/v1/recipes/144" for ::1 at 2023-09-18 16:23:02 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"144"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes/144" for ::1 at 2023-09-18 16:23:17 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"144"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:23:21 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 12492)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:19 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 12493)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:20 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 12493)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:20 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 12493)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:21 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 12492)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:22 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.3ms | Allocations: 12492)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:23 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 12492)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:25 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 12492)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:25:25 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 12492)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:29:05 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000112487a98>, params: {"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:29:05.666573"], ["updated_at", "2023-09-18 14:29:05.666573"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.2ms | Allocations: 6687)
+
+
+  
+NoMethodError (undefined method `api_v1_post_url' for #<Api::V1::RecipesController:0x00000000011eb8>
+
+      render json: @recipe, status: :created, location: api_v1_post_url(@recipe)
+                                                        ^^^^^^^^^^^^^^^
+Did you mean?  api_v1_recipes_url):
+  
+app/controllers/api/v1/recipes_controller.rb:17:in `create'
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:29:17 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111a65ec0>, params: {"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test number 10", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:29:17.284330"], ["updated_at", "2023-09-18 14:29:17.284330"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.3ms | Allocations: 4195)
+
+
+  
+NoMethodError (undefined method `api_v1_post_url' for #<Api::V1::RecipesController:0x00000000011f58>
+
+      render json: @recipe, status: :created, location: api_v1_post_url(@recipe)
+                                                        ^^^^^^^^^^^^^^^
+Did you mean?  api_v1_recipes_url):
+  
+app/controllers/api/v1/recipes_controller.rb:17:in `create'
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:29:57 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test number 11", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test number 11", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111d9e470>, params: {"title"=>"test number 11", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test number 11", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:29:57.573670"], ["updated_at", "2023-09-18 14:29:57.573670"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms | Allocations: 4195)
+
+
+  
+NoMethodError (undefined method `api_v1_post_url' for #<Api::V1::RecipesController:0x00000000011fd0>
+
+      render json: @recipe, status: :created, location: api_v1_post_url(@recipe)
+                                                        ^^^^^^^^^^^^^^^
+Did you mean?  api_v1_recipes_url):
+  
+app/controllers/api/v1/recipes_controller.rb:17:in `create'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:30:37 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.8ms | Allocations: 17358)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:30:44 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011231ec88>, params: {"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:30:44.040858"], ["updated_at", "2023-09-18 14:30:44.040858"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 2344)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:31:18 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011238e240>, params: {"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"test nuber 12", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:31:18.952093"], ["updated_at", "2023-09-18 14:31:18.952093"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/149" for ::1 at 2023-09-18 16:31:19 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"149"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 149], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 872)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:31:27 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 13153)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:31:44 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"great recipe", "description"=>"bla blabla", "rate"=>5, "prep_time"=>60, "servings"=>"6", "category"=>"Italian", "recipe"=>{"title"=>"great recipe", "description"=>"bla blabla", "rate"=>5, "prep_time"=>60, "servings"=>"6", "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x00000001114d18d8>, params: {"title"=>"great recipe", "description"=>"bla blabla", "rate"=>5, "prep_time"=>60, "servings"=>"6", "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"great recipe", "description"=>"bla blabla", "rate"=>5, "prep_time"=>60, "servings"=>"6", "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "bla blabla"], ["rate", nil], ["prep_time", 60], ["servings", 6], ["category", "Italian"], ["created_at", "2023-09-18 14:31:44.288025"], ["updated_at", "2023-09-18 14:31:44.288025"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.9ms | Allocations: 2073)
+
+
+Started GET "/api/v1/recipes/150" for ::1 at 2023-09-18 16:31:44 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"150"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 150], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:32:01 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 13285)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:32:34 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.9ms | Allocations: 13280)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 16:35:18 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"hello hello", "description"=>"okaay okay okay", "rate"=>"10", "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"hello hello", "description"=>"okaay okay okay", "rate"=>"10", "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111d5eed8>, params: {"title"=>"hello hello", "description"=>"okaay okay okay", "rate"=>"10", "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"hello hello", "description"=>"okaay okay okay", "rate"=>"10", "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "okaay okay okay"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 14:35:18.897842"], ["updated_at", "2023-09-18 14:35:18.897842"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 2.1ms | Allocations: 2071)
+
+
+Started GET "/api/v1/recipes/151" for ::1 at 2023-09-18 16:35:19 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"151"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:36:02 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 13416)
+
+
+Started GET "/api/v1/recipes/151" for ::1 at 2023-09-18 16:36:05 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"151"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 16:36:06 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 1.5ms | Allocations: 13416)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:00:33 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 2.6ms | Allocations: 13568)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:04:19 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"helloooo", "description"=>"this is my description yay", "rate"=>"8", "prep_time"=>"70", "servings"=>"2", "category"=>"Chinese", "recipe"=>{"title"=>"helloooo", "description"=>"this is my description yay", "rate"=>"8", "prep_time"=>"70", "servings"=>"2", "category"=>"Chinese"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x000000011230fa58>, params: {"title"=>"helloooo", "description"=>"this is my description yay", "rate"=>"8", "prep_time"=>"70", "servings"=>"2", "category"=>"Chinese", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"helloooo", "description"=>"this is my description yay", "rate"=>"8", "prep_time"=>"70", "servings"=>"2", "category"=>"Chinese"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "this is my description yay"], ["rate", nil], ["prep_time", 70], ["servings", 2], ["category", "Chinese"], ["created_at", "2023-09-18 15:04:19.073100"], ["updated_at", "2023-09-18 15:04:19.073100"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 2071)
+
+
+Started GET "/api/v1/recipes/152" for ::1 at 2023-09-18 17:04:19 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"152"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 152], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 699)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:04:29 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (2.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 2.1ms | Allocations: 13546)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:05:11 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms | Allocations: 13549)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:05:19 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"afhuweiruybceasjvujv", "description"=>"avlejhswviubnwskjvbwjkhv", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"afhuweiruybceasjvujv", "description"=>"avlejhswviubnwskjvbwjkhv", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x00000001119039b0>, params: {"title"=>"afhuweiruybceasjvujv", "description"=>"avlejhswviubnwskjvbwjkhv", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"afhuweiruybceasjvujv", "description"=>"avlejhswviubnwskjvbwjkhv", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "avlejhswviubnwskjvbwjkhv"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:05:19.376827"], ["updated_at", "2023-09-18 15:05:19.376827"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 2071)
+
+
+Started GET "/api/v1/recipes/153" for ::1 at 2023-09-18 17:05:19 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"153"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 153], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 658)
+
+
+Started GET "/api/v1/recipes/153" for ::1 at 2023-09-18 17:08:44 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"153"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 153], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 659)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:08:45 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 13683)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:08:50 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"werfgewrfe", "description"=>"wevw", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"werfgewrfe", "description"=>"wevw", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111d9e498>, params: {"title"=>"werfgewrfe", "description"=>"wevw", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"werfgewrfe", "description"=>"wevw", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "wevw"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:08:50.419737"], ["updated_at", "2023-09-18 15:08:50.419737"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 8ms (Views: 1.3ms | ActiveRecord: 1.4ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/154" for ::1 at 2023-09-18 17:08:50 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"154"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 154], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:08:56 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.8ms | Allocations: 13814)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:09:22 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"dsvsvd", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"dsvsvd", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111ff69e8>, params: {"title"=>"dsvsvd", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"dsvsvd", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (1.1ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:09:22.228233"], ["updated_at", "2023-09-18 15:09:22.228233"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 2.3ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/155" for ::1 at 2023-09-18 17:09:22 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"155"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 155], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:10:33 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 13946)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:10:39 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000112265800>, params: {"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "blablablabla"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:10:39.693706"], ["updated_at", "2023-09-18 15:10:39.693706"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 2070)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:11:22 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x00000001122ed700>, params: {"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"blabla", "description"=>"blablablabla", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "blablablabla"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:11:22.593701"], ["updated_at", "2023-09-18 15:11:22.593701"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:11:31 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.4ms | Allocations: 14210)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:11:31 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"dsavsv", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"dsavsv", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111eac420>, params: {"title"=>"dsavsv", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"dsavsv", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:11:31.811428"], ["updated_at", "2023-09-18 15:11:31.811428"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:13:49 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 1.9ms | Allocations: 14343)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:13:50 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"hello", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"hello", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x00000001116dd848>, params: {"title"=>"hello", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"hello", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:13:50.511199"], ["updated_at", "2023-09-18 15:13:50.511199"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/159" for ::1 at 2023-09-18 17:13:50 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"159"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 159], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:14:04 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 1.8ms | Allocations: 14471)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:18:26 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 14475)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:18:32 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"davsdvs", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"davsdvs", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameters: :title, :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000111e0f580>, params: {"title"=>"davsdvs", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"davsdvs", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", nil], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:18:32.260052"], ["updated_at", "2023-09-18 15:18:32.260052"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 1.6ms | Allocations: 2070)
+
+
+Started GET "/api/v1/recipes/160" for ::1 at 2023-09-18 17:18:32 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"160"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 160], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 657)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:19:47 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.9ms | Allocations: 19137)
+
+
+Started POST "/api/v1/recipes" for ::1 at 2023-09-18 17:19:53 +0200
+Processing by Api::V1::RecipesController#create as */*
+  Parameters: {"title"=>"potatoe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "recipe"=>{"title"=>"potatoe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+[31mUnpermitted parameter: :rate. Context: { controller: Api::V1::RecipesController, action: create, request: #<ActionDispatch::Request:0x0000000112236190>, params: {"title"=>"potatoe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "controller"=>"api/v1/recipes", "action"=>"create", "recipe"=>{"title"=>"potatoe", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mRecipe Create (1.0ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "description", "rate", "prep_time", "servings", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "potatoe"], ["description", "no description yet"], ["rate", nil], ["prep_time", 60], ["servings", 4], ["category", "Italian"], ["created_at", "2023-09-18 15:19:53.471019"], ["updated_at", "2023-09-18 15:19:53.471019"]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:16:in `create'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 2353)
+
+
+Started GET "/api/v1/recipes/161" for ::1 at 2023-09-18 17:19:53 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"161"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 161], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-18 17:19:56 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.9ms | Allocations: 14744)
+
+
