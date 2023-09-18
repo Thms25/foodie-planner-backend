@@ -2,7 +2,7 @@ class Api::V1::RecipesController < ApplicationController
   before_action :set_recipe, only: %I[show update destro]
 
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.order(created_at: :desc)
     render json: @recipes
   end
 
