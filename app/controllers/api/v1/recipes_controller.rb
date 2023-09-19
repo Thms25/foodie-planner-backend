@@ -1,5 +1,5 @@
 class Api::V1::RecipesController < ApplicationController
-  before_action :set_recipe, only: %I[show update destro]
+  before_action :set_recipe, only: %I[show update destroy]
 
   def index
     @recipes = Recipe.order(created_at: :desc)

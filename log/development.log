@@ -6765,3 +6765,395 @@ Processing by Api::V1::RecipesController#index as HTML
 Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 1.2ms | Allocations: 15296)
 
 
+Started GET "/" for ::1 at 2023-09-19 17:16:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/thomasallen/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/thomasallen/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.2ms | Allocations: 528)
+Completed 200 OK in 120ms (Views: 52.7ms | ActiveRecord: 0.0ms | Allocations: 4311)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:16:30 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 58ms (Views: 48.7ms | ActiveRecord: 1.2ms | Allocations: 24188)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-09-19 17:16:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:16:31 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.4ms | Allocations: 15488)
+
+
+Started DELETE "/api/v1/recipes/164" for ::1 at 2023-09-19 17:16:39 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/164"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:16:46 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.1ms | Allocations: 15296)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:18:27 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 15300)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:18:29 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started GET "/api/v1/recipes/160" for ::1 at 2023-09-19 17:19:00 +0200
+Processing by Api::V1::RecipesController#show as HTML
+  Parameters: {"id"=>"160"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 160], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 26ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 3110)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:20:36 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:00 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:01 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started GET "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:27 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"165"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 887)
+
+
+Started PUT "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:35 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"jhhgvgh", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "id"=>"165", "recipe"=>{"title"=>"jhhgvgh", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (3.2ms)[0m  [1m[33mUPDATE "recipes" SET "title" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["title", "jhhgvgh"], ["updated_at", "2023-09-19 15:27:35.057108"], ["id", 165]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 5.9ms | Allocations: 3170)
+
+
+Started GET "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:40 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"165"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started PUT "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:48 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"bla", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian", "id"=>"165", "recipe"=>{"title"=>"bla", "description"=>"no description yet", "rate"=>5, "prep_time"=>60, "servings"=>4, "category"=>"Italian"}}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (0.9ms)[0m  [1m[33mUPDATE "recipes" SET "title" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["title", "bla"], ["updated_at", "2023-09-19 15:27:48.019782"], ["id", 165]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 2.8ms | Allocations: 2482)
+
+
+Started GET "/api/v1/recipes/165" for ::1 at 2023-09-19 17:27:52 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"165"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:28:16 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.5ms | Allocations: 15360)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:28:50 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:29:36 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 15301)
+
+
+Started DELETE "/api/v1/recipes/164" for ::1 at 2023-09-19 17:29:39 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/164"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 17:30:16 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:31:58 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 15300)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 17:32:30 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 15300)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:03:01 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 32ms (Views: 21.6ms | ActiveRecord: 3.0ms | Allocations: 15452)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:03:05 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.5ms | Allocations: 15300)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:03:17 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 15300)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:03:28 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.4ms | Allocations: 15301)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:03:48 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:05:08 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:06:24 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:07:03 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 15301)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:07:04 +0200
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/recipes/165"):
+  
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:08:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"165"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1179)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass
+
+    @recipe.destroy
+           ^^^^^^^^):
+  
+app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:09:51 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 42ms (Views: 18.1ms | ActiveRecord: 1.0ms | Allocations: 24333)
+
+
+Started DELETE "/api/v1/recipes/165" for ::1 at 2023-09-19 18:09:53 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"165"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 165], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 165], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (2.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 165]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 108ms (ActiveRecord: 6.1ms | Allocations: 8008)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:10:02 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 15277)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:10:58 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 15173)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:11:18 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 15161)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:11:22 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 1.0ms | Allocations: 15161)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:11:32 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.4ms | Allocations: 15161)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:25:21 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 15348)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:25:31 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.5ms | Allocations: 15161)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:27:34 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 15162)
+
+
+Started DELETE "/api/v1/recipes/164" for ::1 at 2023-09-19 18:27:39 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"164"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 164], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 164]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 2.7ms | Allocations: 3090)
+
+
+Started DELETE "/api/v1/recipes/164" for ::1 at 2023-09-19 18:27:42 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"164"}
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 164], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.7ms | Allocations: 548)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=164):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:28:04 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.5ms | Allocations: 15021)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:28:09 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.8ms | Allocations: 15021)
+
+
+Started DELETE "/api/v1/recipes/163" for ::1 at 2023-09-19 18:28:13 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"163"}
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 163], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 163], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 163]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 4.0ms | Allocations: 2997)
+
+
+Started DELETE "/api/v1/recipes/162" for ::1 at 2023-09-19 18:28:15 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"162"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 162], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 162]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 2.5ms | Allocations: 2995)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:28:52 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms | Allocations: 14744)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:29:01 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 14745)
+
+
