@@ -7157,3 +7157,1152 @@ Processing by Api::V1::RecipesController#index as */*
 Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 14745)
 
 
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 18:46:08 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 14902)
+
+
+Started DELETE "/api/v1/recipes/161" for ::1 at 2023-09-19 18:46:10 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"161"}
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 161], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 161], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 161]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 3.8ms | Allocations: 3065)
+
+
+Started DELETE "/api/v1/recipes/160" for ::1 at 2023-09-19 18:46:11 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"160"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 160], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 160], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 160]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.3ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/159" for ::1 at 2023-09-19 18:46:12 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"159"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 159], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 159], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 159]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.1ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/158" for ::1 at 2023-09-19 18:46:13 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"158"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 158], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 158], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.4ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 158]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 2.0ms | Allocations: 2996)
+
+
+Started DELETE "/api/v1/recipes/157" for ::1 at 2023-09-19 18:46:13 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"157"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 157], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 157], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 157]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 3.0ms | Allocations: 2996)
+
+
+Started DELETE "/api/v1/recipes/156" for ::1 at 2023-09-19 18:46:14 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"156"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 156], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 156], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 156]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.1ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/155" for ::1 at 2023-09-19 18:46:15 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"155"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 155], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 155], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.9ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 155]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.9ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/154" for ::1 at 2023-09-19 18:46:15 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"154"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 154], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 154], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 154]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.1ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/153" for ::1 at 2023-09-19 18:46:16 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"153"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 153], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 153], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 153]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 2.0ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/152" for ::1 at 2023-09-19 18:46:16 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"152"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 152], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 152], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 152]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 2.1ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/151" for ::1 at 2023-09-19 18:46:17 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"151"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 151], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 151], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.7ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 151]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.2ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/150" for ::1 at 2023-09-19 18:46:17 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"150"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 150], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 150], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 150]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.3ms | Allocations: 2995)
+
+
+Started DELETE "/api/v1/recipes/149" for ::1 at 2023-09-19 18:46:18 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"149"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 149], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 149], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 149]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.2ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/148" for ::1 at 2023-09-19 18:46:18 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"148"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 148], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 148], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 148]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 3.2ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/147" for ::1 at 2023-09-19 18:46:19 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"147"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 147], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 147], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 147]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.9ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/146" for ::1 at 2023-09-19 18:46:20 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"146"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 146], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 146], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.6ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 146]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 3.1ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/145" for ::1 at 2023-09-19 18:46:21 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"145"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 145], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 145], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 145]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 2.3ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/144" for ::1 at 2023-09-19 18:46:22 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"144"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 144], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.8ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 144]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 13ms (ActiveRecord: 2.4ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/143" for ::1 at 2023-09-19 18:46:22 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"143"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 143], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 143], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.7ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 143]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 2.9ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/142" for ::1 at 2023-09-19 18:46:23 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"142"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 142], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 142], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.5ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 142]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 2.6ms | Allocations: 2994)
+
+
+Started DELETE "/api/v1/recipes/141" for ::1 at 2023-09-19 18:46:24 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"141"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 141], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 141], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 141]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms | Allocations: 2994)
+
+
+Started GET "/api/v1/recipes/134" for ::1 at 2023-09-19 19:00:59 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"134"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 134], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 825)
+
+
+Started PUT "/api/v1/recipes/134" for ::1 at 2023-09-19 19:01:13 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Baked Beans", "description"=>"2 tablespoons olive oil, plus more for the bread\n1 onion, finely diced\nsalt\npepper\n2 cloves garlic, minced\n6 ounces pancetta, cut into 1/2 inch cubes\n28-ounce can whole tomatoes\n3 sprigs thyme, leaves picked\n1 medium-spiced red or green chile, thinly sliced\n1 tablespoon worcestershire sauce\n1 teaspoon Dijon mustard\n1 teaspoon hot or whole grain mustard\nTwo 14-ounce cans cannellini beans, rinsed and drained\n4 thick slices of bread", "rate"=>2, "prep_time"=>65, "servings"=>4, "category"=>"Caribbean", "id"=>"134", "recipe"=>{"title"=>"Baked Beans", "description"=>"2 tablespoons olive oil, plus more for the bread\n1 onion, finely diced\nsalt\npepper\n2 cloves garlic, minced\n6 ounces pancetta, cut into 1/2 inch cubes\n28-ounce can whole tomatoes\n3 sprigs thyme, leaves picked\n1 medium-spiced red or green chile, thinly sliced\n1 tablespoon worcestershire sauce\n1 teaspoon Dijon mustard\n1 teaspoon hot or whole grain mustard\nTwo 14-ounce cans cannellini beans, rinsed and drained\n4 thick slices of bread", "rate"=>2, "prep_time"=>65, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 134], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "title" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["title", "Baked Beans"], ["updated_at", "2023-09-19 17:01:13.136997"], ["id", 134]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 3.0ms | Allocations: 2995)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:01:24 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (2.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 2.4ms | Allocations: 12003)
+
+
+Started GET "/api/v1/recipes/134" for ::1 at 2023-09-19 19:02:16 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"134"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 134], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started GET "/api/v1/recipes/134" for ::1 at 2023-09-19 19:02:18 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"134"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 134], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:02:22 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:02:28 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started PUT "/api/v1/recipes/140" for ::1 at 2023-09-19 19:02:49 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Parmesan-Roasted Butternut Squash & Potatoes", "description"=>"4 medium yukon gold potatoes, unpeeled and cut into 1-inch chunks (about 2 cups)\n1 1/2 cup butternut squash, cute in 1-inch chunks\n3 tablespoons olive oil\n1/2 teaspoon kosher salt\nFreshly ground black pepper\n1/2 cup freshly grated parmesan cheese\n1 teaspoon dried thyme", "rate"=>4, "prep_time"=>129, "servings"=>2, "category"=>"Italian", "id"=>"140", "recipe"=>{"title"=>"Parmesan-Roasted Butternut Squash & Potatoes", "description"=>"4 medium yukon gold potatoes, unpeeled and cut into 1-inch chunks (about 2 cups)\n1 1/2 cup butternut squash, cute in 1-inch chunks\n3 tablespoons olive oil\n1/2 teaspoon kosher salt\nFreshly ground black pepper\n1/2 cup freshly grated parmesan cheese\n1 teaspoon dried thyme", "rate"=>4, "prep_time"=>129, "servings"=>2, "category"=>"Italian"}}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (0.6ms)[0m  [1m[33mUPDATE "recipes" SET "category" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["category", "Italian"], ["updated_at", "2023-09-19 17:02:49.181529"], ["id", 140]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 2487)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:02:55 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 11964)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:04:52 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (3.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 8.1ms | ActiveRecord: 3.5ms | Allocations: 11963)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:08:13 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:08:23 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:12:22 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:12:38 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 1.0ms | Allocations: 11959)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:13:39 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started DELETE "/api/v1/recipes/140" for ::1 at 2023-09-19 19:13:59 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 140], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 80]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 140]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: f6233dcb-f15c-4bd9-b26c-be85e8ba014d) to Async(default) with arguments: #<GlobalID:0x0000000111eeab80 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/80>>
+Completed 204 No Content in 91ms (ActiveRecord: 1.6ms | Allocations: 24184)
+
+
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:13:59 +0200
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 80], ["LIMIT", 1]]
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d] Performing ActiveStorage::PurgeJob (Job ID: f6233dcb-f15c-4bd9-b26c-be85e8ba014d) from Async(default) enqueued at 2023-09-19T17:13:59Z with arguments: #<GlobalID:0x0000000111f62720 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/80>>
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1070)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=140):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mActiveStorage::Attachment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 80], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 80]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 80], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 80]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d]   [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+Started DELETE "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:13:59 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 2057)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d] [36m  Cloudinary Storage (1092.5ms) [0m[31mDeleted file from key: 5qhexo6mwzwv936mzietj08slvzn[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f6233dcb-f15c-4bd9-b26c-be85e8ba014d] Performed ActiveStorage::PurgeJob (Job ID: f6233dcb-f15c-4bd9-b26c-be85e8ba014d) from Async(default) in 1152.98ms
+Started DELETE "/api/v1/recipes/undefined" for 127.0.0.1 at 2023-09-19 19:14:06 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 593)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started DELETE "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:14:07 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes/140" for ::1 at 2023-09-19 19:14:07 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"140"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=140):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started DELETE "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:14:07 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:14:11 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 11930)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:14:13 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (2.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 2.0ms | Allocations: 11813)
+
+
+Started DELETE "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:14:21 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes/137" for ::1 at 2023-09-19 19:14:21 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"137"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 137], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started DELETE "/api/v1/recipes/137" for ::1 at 2023-09-19 19:14:21 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"137"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 137], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 137], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 77]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 137]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 11423f96-5ba1-4fbe-9aaa-7034fe428e90) to Async(default) with arguments: #<GlobalID:0x000000011134fb18 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/77>>
+Completed 204 No Content in 7ms (ActiveRecord: 1.6ms | Allocations: 4882)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 77], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90] Performing ActiveStorage::PurgeJob (Job ID: 11423f96-5ba1-4fbe-9aaa-7034fe428e90) from Async(default) enqueued at 2023-09-19T17:14:21Z with arguments: #<GlobalID:0x00000001115228f0 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/77>>
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mActiveStorage::Attachment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 77], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 77]]
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 77], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 77]]
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90]   [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90] [36m  Cloudinary Storage (684.6ms) [0m[31mDeleted file from key: 9x1k2w2cbpxv41m6ih6nzcz4dtfw[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [11423f96-5ba1-4fbe-9aaa-7034fe428e90] Performed ActiveStorage::PurgeJob (Job ID: 11423f96-5ba1-4fbe-9aaa-7034fe428e90) from Async(default) in 692.93ms
+Started GET "/api/v1/recipes/137" for ::1 at 2023-09-19 19:14:40 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"137"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 137], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=137):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:14:43 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 11672)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:14:46 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (2.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 2.8ms | Allocations: 11671)
+
+
+Started GET "/api/v1/recipes/138" for ::1 at 2023-09-19 19:14:48 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"138"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started DELETE "/api/v1/recipes/138" for ::1 at 2023-09-19 19:14:49 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"138"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 138], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 78]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 138]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: dc218886-61ca-4277-bc74-aae3c2443ab3) to Async(default) with arguments: #<GlobalID:0x0000000111f2b798 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/78>>
+Completed 204 No Content in 17ms (ActiveRecord: 2.4ms | Allocations: 4735)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 78], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3] Performing ActiveStorage::PurgeJob (Job ID: dc218886-61ca-4277-bc74-aae3c2443ab3) from Async(default) enqueued at 2023-09-19T17:14:49Z with arguments: #<GlobalID:0x0000000111f7bba8 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/78>>
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 78], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 78]]
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 78], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 78]]
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3]   [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3] [36m  Cloudinary Storage (689.5ms) [0m[31mDeleted file from key: 9isb97oa1winw28hk621uhwteuds[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [dc218886-61ca-4277-bc74-aae3c2443ab3] Performed ActiveStorage::PurgeJob (Job ID: dc218886-61ca-4277-bc74-aae3c2443ab3) from Async(default) in 717.44ms
+Started GET "/api/v1/recipes/138" for ::1 at 2023-09-19 19:15:09 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"138"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=138):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:15:11 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 11531)
+
+
+Started GET "/api/v1/recipes/139" for ::1 at 2023-09-19 19:15:15 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"139"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started DELETE "/api/v1/recipes/139" for ::1 at 2023-09-19 19:15:16 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"139"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 139], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 139], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 79]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.3ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 139]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1cd7465b-6e69-452c-88a1-e8a0c9b12a8a) to Async(default) with arguments: #<GlobalID:0x0000000111bbb748 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/79>>
+Completed 204 No Content in 20ms (ActiveRecord: 3.3ms | Allocations: 4733)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 79], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a] Performing ActiveStorage::PurgeJob (Job ID: 1cd7465b-6e69-452c-88a1-e8a0c9b12a8a) from Async(default) enqueued at 2023-09-19T17:15:16Z with arguments: #<GlobalID:0x0000000111c52300 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/79>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 79], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 79]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 79], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 79]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:15:16 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms | Allocations: 11433)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a] [36m  Cloudinary Storage (736.6ms) [0m[31mDeleted file from key: hap8za3awgy72alnvo1yzk5kscuk[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1cd7465b-6e69-452c-88a1-e8a0c9b12a8a] Performed ActiveStorage::PurgeJob (Job ID: 1cd7465b-6e69-452c-88a1-e8a0c9b12a8a) from Async(default) in 750.56ms
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:16:41 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 11391)
+
+
+Started GET "/api/v1/recipes/135" for ::1 at 2023-09-19 19:16:43 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"135"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 135], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 667)
+
+
+Started DELETE "/api/v1/recipes/135" for ::1 at 2023-09-19 19:16:46 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"135"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 135], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 135], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 75]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 135]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 78acedca-a81b-4741-95ee-0048dda2ec67) to Async(default) with arguments: #<GlobalID:0x000000011127f3c8 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/75>>
+Completed 204 No Content in 17ms (ActiveRecord: 2.3ms | Allocations: 4736)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67] Performing ActiveStorage::PurgeJob (Job ID: 78acedca-a81b-4741-95ee-0048dda2ec67) from Async(default) enqueued at 2023-09-19T17:16:46Z with arguments: #<GlobalID:0x0000000111376b00 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/75>>
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mActiveStorage::Attachment Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 75], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 75]]
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 75], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 75]]
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:16:47 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 11251)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67] [36m  Cloudinary Storage (684.1ms) [0m[31mDeleted file from key: xw2qnd6py5x3msmcb6yjk1nx23dv[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [78acedca-a81b-4741-95ee-0048dda2ec67] Performed ActiveStorage::PurgeJob (Job ID: 78acedca-a81b-4741-95ee-0048dda2ec67) from Async(default) in 695.78ms
+Started DELETE "/api/v1/recipes/134" for ::1 at 2023-09-19 19:17:02 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"134"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 134], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 134], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 74]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 134]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: f6452f19-df07-4e1f-ae2c-a601bbe0777d) to Async(default) with arguments: #<GlobalID:0x0000000111a42088 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/74>>
+Completed 204 No Content in 17ms (ActiveRecord: 3.3ms | Allocations: 4735)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d] Performing ActiveStorage::PurgeJob (Job ID: f6452f19-df07-4e1f-ae2c-a601bbe0777d) from Async(default) enqueued at 2023-09-19T17:17:02Z with arguments: #<GlobalID:0x0000000111a8aec8 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/74>>
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 74], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 74]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 74], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 74]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d] [36m  Cloudinary Storage (645.4ms) [0m[31mDeleted file from key: 4rce2qdjpk1ncxsx96ytj8qg49u3[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f6452f19-df07-4e1f-ae2c-a601bbe0777d] Performed ActiveStorage::PurgeJob (Job ID: f6452f19-df07-4e1f-ae2c-a601bbe0777d) from Async(default) in 658.82ms
+Started DELETE "/api/v1/recipes/129" for ::1 at 2023-09-19 19:17:09 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"129"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 129], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 129], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 69]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 129]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: ab098b01-61f4-4738-8dca-09760c429265) to Async(default) with arguments: #<GlobalID:0x0000000111ccbae8 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/69>>
+Completed 204 No Content in 17ms (ActiveRecord: 3.2ms | Allocations: 4733)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265] Performing ActiveStorage::PurgeJob (Job ID: ab098b01-61f4-4738-8dca-09760c429265) from Async(default) enqueued at 2023-09-19T17:17:09Z with arguments: #<GlobalID:0x0000000111d188c0 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/69>>
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 69], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 69]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 69], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 69]]
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265]   [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265] [36m  Cloudinary Storage (664.2ms) [0m[31mDeleted file from key: 7sl7g9jg397i8v3l7hobf0xodjbm[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [ab098b01-61f4-4738-8dca-09760c429265] Performed ActiveStorage::PurgeJob (Job ID: ab098b01-61f4-4738-8dca-09760c429265) from Async(default) in 677.4ms
+Started GET "/api/v1/recipes/116" for ::1 at 2023-09-19 19:31:41 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"116"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 855)
+
+
+Started PUT "/api/v1/recipes/116" for ::1 at 2023-09-19 19:31:51 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Beef Curry With Shallots", "description"=>"1 pound (450 g) beef stewing meat, cut into 3/4-inch (2 cm) pieces\n1/4 teaspoon salt\n1/8 teaspoon turmeric\n1 tablespoon minced ginger (peeled)\n1 tablespoon minced garlic\n2 tablespoons peanut oil\n3 cups (.75l) water\n2 teaspoons fish sauce\n2 tablespoons fried shallots\n8 small shallots, peeled and left whole\n1/2 teaspoon red chile powder", "rate"=>2, "prep_time"=>45, "servings"=>4, "category"=>"British", "id"=>"116", "recipe"=>{"title"=>"Beef Curry With Shallots", "description"=>"1 pound (450 g) beef stewing meat, cut into 3/4-inch (2 cm) pieces\n1/4 teaspoon salt\n1/8 teaspoon turmeric\n1 tablespoon minced ginger (peeled)\n1 tablespoon minced garlic\n2 tablespoons peanut oil\n3 cups (.75l) water\n2 teaspoons fish sauce\n2 tablespoons fried shallots\n8 small shallots, peeled and left whole\n1/2 teaspoon red chile powder", "rate"=>2, "prep_time"=>45, "servings"=>4, "category"=>"British"}}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "title" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["title", "Beef Curry With Shallots"], ["updated_at", "2023-09-19 17:31:51.398546"], ["id", 116]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 2505)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:31:55 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 11011)
+
+
+Started GET "/api/v1/recipes/124" for ::1 at 2023-09-19 19:31:59 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"124"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started PUT "/api/v1/recipes/124" for ::1 at 2023-09-19 19:32:10 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Chicken Breast", "description"=>"1 bone-in, skin-on chicken breast half, about 10 ounces\nCoarse salt and freshly ground black pepper", "rate"=>"6", "prep_time"=>60, "servings"=>2, "category"=>"Caribbean", "id"=>"124", "recipe"=>{"title"=>"Roasted Chicken Breast", "description"=>"1 bone-in, skin-on chicken breast half, about 10 ounces\nCoarse salt and freshly ground black pepper", "rate"=>"6", "prep_time"=>60, "servings"=>2, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 124], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mRecipe Update (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "rate" = ?, "updated_at" = ? WHERE "recipes"."id" = ?[0m  [["rate", 6.0], ["updated_at", "2023-09-19 17:32:10.616676"], ["id", 124]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:24:in `update'
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 2.9ms | Allocations: 2477)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:32:16 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (4.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 4.4ms | Allocations: 10970)
+
+
+Started GET "/api/v1/recipes/136" for ::1 at 2023-09-19 19:33:31 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"136"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 136], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started PUT "/api/v1/recipes/136" for ::1 at 2023-09-19 19:33:40 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Plums", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean", "id"=>"136", "recipe"=>{"title"=>"Roasted Plums", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 136], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 860)
+
+
+Started PUT "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:34:00 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean", "id"=>"undefined", "recipe"=>{"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms | Allocations: 526)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started PUT "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:34:03 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean", "id"=>"undefined", "recipe"=>{"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.3ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started PUT "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:34:04 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean", "id"=>"undefined", "recipe"=>{"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started PUT "/api/v1/recipes/undefined" for ::1 at 2023-09-19 19:34:13 +0200
+Processing by Api::V1::RecipesController#update as */*
+  Parameters: {"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean", "id"=>"undefined", "recipe"=>{"title"=>"Roasted Plumssss", "description"=>"4-5 ripe plums, (about 1 pound)\n1½ teaspoons lemon juice\n1 tablespoon sugar", "rate"=>3, "prep_time"=>30, "servings"=>4, "category"=>"Caribbean"}}
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.5ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Recipe with 'id'=undefined):
+  
+app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Started GET "/api/v1/recipes/136" for ::1 at 2023-09-19 19:34:15 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"136"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 136], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 665)
+
+
+Started DELETE "/api/v1/recipes/136" for ::1 at 2023-09-19 19:35:02 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"136"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 136], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 136], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 76]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.2ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 136]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a) to Async(default) with arguments: #<GlobalID:0x00000001118a3588 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/76>>
+Completed 204 No Content in 18ms (ActiveRecord: 3.6ms | Allocations: 4803)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 76], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a] Performing ActiveStorage::PurgeJob (Job ID: 6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a) from Async(default) enqueued at 2023-09-19T17:35:02Z with arguments: #<GlobalID:0x0000000111959428 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/76>>
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 76], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 76]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 76], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 76]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:35:02 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 1.0ms | Allocations: 10987)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a] [36m  Cloudinary Storage (743.7ms) [0m[31mDeleted file from key: ze273d1bo6ynsvnn8dlfoohkf3am[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a] Performed ActiveStorage::PurgeJob (Job ID: 6a1b3de2-209a-4c93-bee8-ae6a4ede0a7a) from Async(default) in 755.36ms
+Started GET "/api/v1/recipes/118" for ::1 at 2023-09-19 19:35:15 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"118"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 118], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 671)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:35:17 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.7ms | Allocations: 10830)
+
+
+Started GET "/api/v1/recipes/130" for ::1 at 2023-09-19 19:35:22 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"130"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 130], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:35:24 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 10830)
+
+
+Started GET "/api/v1/recipes/130" for ::1 at 2023-09-19 19:35:25 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"130"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 130], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 666)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:35:26 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.8ms | Allocations: 10831)
+
+
+Started GET "/api/v1/recipes/128" for ::1 at 2023-09-19 19:35:29 +0200
+Processing by Api::V1::RecipesController#show as */*
+  Parameters: {"id"=>"128"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 128], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 666)
+
+
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:35:34 +0200
+Processing by Api::V1::RecipesController#index as */*
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.9ms | Allocations: 10831)
+
+
+Started DELETE "/api/v1/recipes/131" for ::1 at 2023-09-19 19:35:49 +0200
+Processing by Api::V1::RecipesController#destroy as */*
+  Parameters: {"id"=>"131"}
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT ?[0m  [["id", 131], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:42:in `set_recipe'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 131], ["record_type", "Recipe"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 71]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mRecipe Destroy (0.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = ?[0m  [["id", 131]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/recipes_controller.rb:32:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 40d464a7-9409-45fe-a5cc-8890b134141f) to Async(default) with arguments: #<GlobalID:0x000000011199a3b0 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/71>>
+Completed 204 No Content in 18ms (ActiveRecord: 3.2ms | Allocations: 4733)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f] Performing ActiveStorage::PurgeJob (Job ID: 40d464a7-9409-45fe-a5cc-8890b134141f) from Async(default) enqueued at 2023-09-19T17:35:49Z with arguments: #<GlobalID:0x00000001119e94b0 @uri=#<URI::GID gid://foodie-planner-v2/ActiveStorage::Blob/71>>
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mActiveStorage::Attachment Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 71], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mActiveStorage::VariantRecord Load (0.0ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 71]]
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 71], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 71]]
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f]   [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f] [36m  Cloudinary Storage (691.9ms) [0m[31mDeleted file from key: 01kcfxmwzgzg44ithosrj1fb94l0[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [40d464a7-9409-45fe-a5cc-8890b134141f] Performed ActiveStorage::PurgeJob (Job ID: 40d464a7-9409-45fe-a5cc-8890b134141f) from Async(default) in 708.31ms
+Started GET "/api/v1/recipes" for ::1 at 2023-09-19 19:36:07 +0200
+Processing by Api::V1::RecipesController#index as HTML
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" ORDER BY "recipes"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/recipes_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.8ms | Allocations: 10681)
+
+
