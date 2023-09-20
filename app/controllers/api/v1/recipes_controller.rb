@@ -7,7 +7,7 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def show
-    render json: @recipe
+    render json: @recipe, methods: [:photo_url]
   end
 
   def create
