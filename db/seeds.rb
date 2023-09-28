@@ -5,19 +5,19 @@ require 'open-uri'
 puts 'Destroying recipes'
 Recipe.destroy_all
 
-# puts 'Creating recipes'
+puts 'Creating recipes'
 
-# 20.times do |i|
-#   Recipe.create(
-#     title: "Recipe #{i + 1}",
-#     description: 'This is a great recipe',
-#     rate: [8, 9, 10].sample.to_f,
-#     prep_time: [30, 45, 60].sample,
-#     servings: [2, 4, 6].sample,
-#     category: 'Best category'
-#   )
-#   puts "Recipe #{i + 1} done!"
-# end
+50.times do |i|
+  Recipe.create(
+    title: "Recipe #{i + 1}",
+    description: 'This is a great recipe',
+    rate: [8, 9, 10].sample.to_f,
+    prep_time: [30, 45, 60].sample,
+    servings: [2, 4, 6].sample,
+    category: 'Best category'
+  )
+  puts "Recipe #{i + 1} done!"
+end
 
 # puts "Destroying favorites"
 # Favorite.destroy_all
@@ -63,47 +63,47 @@ Recipe.destroy_all
 
 # puts "done with users!"
 
-cuisine_types = [
-  'Mexican',
-  'Asian',
-  'British',
-  'Caribbean'
-  # "Chinese",
-  # "Indian",
-  # "Italian",
-  # "Nordic",
-  # "Mediterranean"
-]
+# cuisine_types = [
+#   'Mexican',
+#   'Asian',
+#   'British',
+#   'Caribbean',
+#   "Chinese"
+#   # "Indian",
+#   # "Italian",
+#   # "Nordic",
+#   # "Mediterranean"
+# ]
 
-puts "let's populate the recipes and ingredients !"
+# puts "let's populate the recipes and ingredients !"
 
-cuisine_types.each do |type|
-  url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=#{ENV.fetch('EDAMAM_ID')}&app_key=#{ENV.fetch('EDAMAM_KEY')}&cuisineType=#{type}&dishType=Main%20course"
-  file = URI.open(url).read
-  data = JSON.parse(file)
+# cuisine_types.each do |type|
+#   url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=#{ENV.fetch('EDAMAM_ID')}&app_key=#{ENV.fetch('EDAMAM_KEY')}&cuisineType=#{type}&dishType=Main%20course"
+#   file = URI.open(url).read
+#   data = JSON.parse(file)
 
-  puts "\nstarting with #{type} recipes - pagee 1\n"
+  # puts "\nstarting with #{type} recipes - pagee 1\n"
 
-  data["hits"].each do |hit|
-    photo = URI.open(hit["recipe"]["image"])
-    recipe = Recipe.new(
-      title: hit["recipe"]["label"],
-      description: hit["recipe"]["ingredientLines"].join("\n"),
-      prep_time: hit["recipe"]["totalTime"].to_i > 0 ? hit["recipe"]["totalTime"].to_i : [15, 30, 45, 60].sample,
-      rate: (1..5).to_a.sample,
-      servings: hit["recipe"]["yield"].to_i,
-      category: type,
+  # data["hits"].each do |hit|
+  #   photo = URI.open(hit["recipe"]["image"])
+  #   recipe = Recipe.new(
+  #     title: hit["recipe"]["label"],
+  #     description: hit["recipe"]["ingredientLines"].join("\n"),
+  #     prep_time: hit["recipe"]["totalTime"].to_i > 0 ? hit["recipe"]["totalTime"].to_i : [15, 30, 45, 60].sample,
+  #     rate: (1..5).to_a.sample,
+  #     servings: hit["recipe"]["yield"].to_i,
+  #     category: type,
       # calories: hit["recipe"]["calories"].to_f.round(1),
       # carbon: hit["recipe"]["co2EmissionsClass"],
       # fat: hit["recipe"]["totalNutrients"]["FAT"]["quantity"].to_f.round(1),
       # protein: hit["recipe"]["totalNutrients"]["PROCNT"]["quantity"].to_f.round(1),
       # sugar: hit["recipe"]["totalNutrients"]["SUGAR"]["quantity"].to_f.round(1),
       # glucid: hit["recipe"]["totalNutrients"]["CHOCDF.net"].nil? ? hit["recipe"]["totalNutrients"]["CHOCDF"]["quantity"].to_f.round(1) : hit["recipe"]["totalNutrients"]["CHOCOF.net"].to_f.round(1)
-    )
-    recipe.photo.attach(io: photo, filename: "#{recipe.title.split().join("_")}.png", content_type: "image/png")
-    recipe.save!
-    puts "#{recipe.title} added succesfully"
-    puts ""
+    # )
+    # recipe.photo.attach(io: photo, filename: "#{recipe.title.split().join("_")}.png", content_type: "image/png")
+    # recipe.save!
+    # puts "#{recipe.title} added succesfully"
+    # puts ""
     # puts "creating ingredients for #{recipe.name}"
     # hit["recipe"]["ingredients"].each do |ingredient|
     #   Ingredient.create!(
@@ -114,7 +114,7 @@ cuisine_types.each do |type|
     #     category: ingredient["foodCategory"]
     #   )
     # end
-  end
+  # end
 
 #   sleep(5)
 #   puts"...sleeping for 5 sec..."
@@ -283,6 +283,6 @@ cuisine_types.each do |type|
 #   end
 #   puts "creating favorites for #{user.first_name}"
 #   puts "."
-end
+# end
 
 puts "done!"
