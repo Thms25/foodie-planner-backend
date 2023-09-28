@@ -20,6 +20,37 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+
+To switch from SQLite to PostgreSQL, you'll need to update your Gemfile and config/database.yml for a production database. Here are the necessary changes:
+
+1. Gemfile:
+
+In your Gemfile, replace the sqlite3 gem with the pg (PostgreSQL) gem for the production environment. The pg gem is the PostgreSQL adapter for Rails. Make sure it's in the :production group:
+
+ruby
+Copy code
+# Use SQLite in development and PostgreSQL in production
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
+2. Update Gem Dependencies:
+
+After editing the Gemfile, run:
+
+bash
+Copy code
+bundle install
+This will update your gem dependencies.
+
+3. Database Configuration (config/database.yml):
+
+In the config/database.yml file, specify PostgreSQL configurations for the production environment. Heroku will provide you with the production database URL automatically.
+
+Here's a sample configuration:
+
+yaml
+Copy code
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
