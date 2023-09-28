@@ -7,15 +7,16 @@ Recipe.destroy_all
 
 # puts 'Creating recipes'
 
-# 20.times do |i|
-#   Recipe.create(
+# 50.times do |i|
+#   recipe = Recipe.new(
 #     title: "Recipe #{i + 1}",
 #     description: 'This is a great recipe',
 #     rate: [8, 9, 10].sample.to_f,
-#     prep_time: [30, 45, 60].sample,
-#     servings: [2, 4, 6].sample,
+#     prep_time: [30, 45, 60].sample.to_i,
+#     servings: [2, 4, 6].sample.to_i,
 #     category: 'Best category'
 #   )
+#   recipe.save!
 #   puts "Recipe #{i + 1} done!"
 # end
 
@@ -67,12 +68,12 @@ cuisine_types = [
   'Mexican',
   'Asian',
   'British',
-  'Caribbean'
-  # "Chinese",
-  # "Indian",
-  # "Italian",
-  # "Nordic",
-  # "Mediterranean"
+  'Caribbean',
+  'Chinese'
+  # 'Indian',
+  # 'Italian',
+  # 'Nordic',
+  # 'Mediterranean'
 ]
 
 puts "let's populate the recipes and ingredients !"
@@ -84,15 +85,15 @@ cuisine_types.each do |type|
 
   puts "\nstarting with #{type} recipes - pagee 1\n"
 
-  data["hits"].each do |hit|
-    photo = URI.open(hit["recipe"]["image"])
+  data['hits'].each do |hit|
+    photo = URI.open(hit['recipe']['image'])
     recipe = Recipe.new(
-      title: hit["recipe"]["label"],
-      description: hit["recipe"]["ingredientLines"].join("\n"),
-      prep_time: hit["recipe"]["totalTime"].to_i > 0 ? hit["recipe"]["totalTime"].to_i : [15, 30, 45, 60].sample,
+      title: hit['recipe']['label'],
+      description: hit['recipe']['ingredientLines'].join("\n"),
+      prep_time: hit['recipe']['totalTime'].to_i.positive? ? hit['recipe']['totalTime'].to_i : [15, 30, 45, 60].sample,
       rate: (1..5).to_a.sample,
-      servings: hit["recipe"]["yield"].to_i,
-      category: type,
+      servings: hit['recipe']['yield'].to_i,
+      category: type
       # calories: hit["recipe"]["calories"].to_f.round(1),
       # carbon: hit["recipe"]["co2EmissionsClass"],
       # fat: hit["recipe"]["totalNutrients"]["FAT"]["quantity"].to_f.round(1),
@@ -100,10 +101,10 @@ cuisine_types.each do |type|
       # sugar: hit["recipe"]["totalNutrients"]["SUGAR"]["quantity"].to_f.round(1),
       # glucid: hit["recipe"]["totalNutrients"]["CHOCDF.net"].nil? ? hit["recipe"]["totalNutrients"]["CHOCDF"]["quantity"].to_f.round(1) : hit["recipe"]["totalNutrients"]["CHOCOF.net"].to_f.round(1)
     )
-    recipe.photo.attach(io: photo, filename: "#{recipe.title.split().join("_")}.png", content_type: "image/png")
+    recipe.photo.attach(io: photo, filename: "#{recipe.title.split.join('_')}.png", content_type: 'image/png')
     recipe.save!
-    puts "#{recipe.title} added succesfully"
-    puts ""
+    puts "#{recipe.title} added succesfully\n"
+
     # puts "creating ingredients for #{recipe.name}"
     # hit["recipe"]["ingredients"].each do |ingredient|
     #   Ingredient.create!(
@@ -285,4 +286,4 @@ cuisine_types.each do |type|
 #   puts "."
 end
 
-puts "done!"
+puts 'done !'
