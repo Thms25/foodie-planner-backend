@@ -126,6 +126,8 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.4-x86_64-linux)
+      racc (~> 1.4)
     pg (1.5.4)
     psych (5.1.0)
       stringio
@@ -190,6 +192,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -207,3 +210,7 @@ RUBY VERSION
 
 BUNDLED WITH
    2.4.20
+
+PLATFORMS
+  x86_64-darwin-21
+  x86_64-linux
