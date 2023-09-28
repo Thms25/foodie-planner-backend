@@ -172,8 +172,11 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+<<<<<<< HEAD
     sqlite3 (1.6.3-x86_64-darwin)
     sqlite3 (1.6.3-x86_64-linux)
+=======
+>>>>>>> 55bb36e61d012ca09aeaa15754a2466b277faa7c
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
@@ -195,11 +198,18 @@ DEPENDENCIES
   cloudinary
   debug
   dotenv-rails
+<<<<<<< HEAD
   pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.7)
   sqlite3
+=======
+  pg (~> 1.1)
+  puma (~> 5.0)
+  rack-cors
+  rails (~> 7.0.7)
+>>>>>>> 55bb36e61d012ca09aeaa15754a2466b277faa7c
   tzinfo-data
 
 RUBY VERSION
