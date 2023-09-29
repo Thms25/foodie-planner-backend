@@ -5,10 +5,6 @@ class Recipe < ApplicationRecord
 
   def photo_url
     if photo.attached?
-      # version = photo.metadata['version']
-      # {
-      #   key: photo.key,
-      # }
       photo.url.split('cloudinary.com/')[-1]
     else
       ''
