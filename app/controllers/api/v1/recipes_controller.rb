@@ -3,18 +3,18 @@ class Api::V1::RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.order(created_at: :desc)
-    render json: @recipes, methods: [:photo_key]
+    render json: @recipes, methods: [:photo_url]
   end
 
   def show
-    render json: @recipe, methods: [:photo_key]
+    render json: @recipe, methods: [:photo_url]
   end
 
   def create
     @recipe = Recipe.new(recipe_params)
 
     if @recipe.save!
-      render json: @recipe #, status: :created, location: api_v1_post_url(@recipe)
+      render json: @recipe
     else
       render json: @recipe.errors, status: :unprocessable_entity
     end
