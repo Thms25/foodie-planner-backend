@@ -5,7 +5,6 @@ class Recipe < ApplicationRecord
 
   def photo_key
     if photo.attached?
-      # "https://res.cloudinary.com/#{config.cloud_name}/image/upload/v1694797150/development/#{photo.key}.jpg"
       photo.key
     else
       ''
