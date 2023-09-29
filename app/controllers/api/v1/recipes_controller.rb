@@ -3,11 +3,11 @@ class Api::V1::RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.order(created_at: :desc)
-    render json: @recipes, methods: [:photo_url]
+    render json: @recipes, methods: [:photo_key]
   end
 
   def show
-    render json: @recipe, methods: [:photo_url]
+    render json: @recipe, methods: [:photo_key]
   end
 
   def create
