@@ -5,7 +5,9 @@ class Recipe < ApplicationRecord
 
   def photo_url
     if photo.attached?
-      photo.url.split('cloudinary.com/')[-1]
+      # photo.url.split('cloudinary.com/')[-1]
+      cloudinary_url = Cloudinary::Utils.cloudinary_url(photo.key)
+      cloudinary_url.split('cloudinary.com/')[-1]
     else
       ''
     end
