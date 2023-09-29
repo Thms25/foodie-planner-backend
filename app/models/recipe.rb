@@ -5,7 +5,7 @@ class Recipe < ApplicationRecord
 
   def photo_url
     if photo.attached?
-      "https://res.cloudinary.com/#{Cloudinary.config.cloud_name}/image/upload/v1694797150/development/#{photo.key}.jpg"
+      "https://res.cloudinary.com/#{ENV.fetch('CL_CLOUD')}/image/upload/v1694797150/development/#{photo.key}.jpg"
     else
       ''
     end
