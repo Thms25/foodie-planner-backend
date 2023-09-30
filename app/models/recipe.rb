@@ -3,13 +3,12 @@ class Recipe < ApplicationRecord
   validates :title, :description, :servings, :category, presence: true
   validates :prep_time, :servings, presence: true, numericality: { only_integer: true, greater_than: 0 }
 
-  def photo_url
+  def photo_key
     if photo.attached?
-      # version = photo.metadata['version']
-      # {
-      #   key: photo.key,
-      # }
-      photo.url.split('cloudinary.com/')[-1]
+      # photo.url.split('cloudinary.com/')[-1]
+      # cloudinary_url = Cloudinary::Utils.cloudinary_url(photo.key)
+      # cloudinary_url.split('cloudinary.com/')[-1]
+      photo.key
     else
       ''
     end
