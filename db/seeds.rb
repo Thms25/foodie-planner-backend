@@ -87,13 +87,21 @@ cuisine_types.each do |type|
 
   data['hits'].each do |hit|
     photo = URI.open(hit['recipe']['image'])
+    cl_upload = Cloudinary::Uploader.upload(photo)
+    cl_url = cl_upload['secure_url']
+    puts ''
+    puts "cl_upload: #{cl_upload}"
+    puts ''
+    puts "cl_url: #{cl_url}"
+    puts ''
     recipe = Recipe.new(
       title: hit['recipe']['label'],
       description: hit['recipe']['ingredientLines'].join("\n"),
       prep_time: hit['recipe']['totalTime'].to_i.positive? ? hit['recipe']['totalTime'].to_i : [15, 30, 45, 60].sample,
       rate: (1..5).to_a.sample,
       servings: hit['recipe']['yield'].to_i,
-      category: type
+      category: type,
+      photo_url: cl_url
       # calories: hit["recipe"]["calories"].to_f.round(1),
       # carbon: hit["recipe"]["co2EmissionsClass"],
       # fat: hit["recipe"]["totalNutrients"]["FAT"]["quantity"].to_f.round(1),
@@ -101,7 +109,6 @@ cuisine_types.each do |type|
       # sugar: hit["recipe"]["totalNutrients"]["SUGAR"]["quantity"].to_f.round(1),
       # glucid: hit["recipe"]["totalNutrients"]["CHOCDF.net"].nil? ? hit["recipe"]["totalNutrients"]["CHOCDF"]["quantity"].to_f.round(1) : hit["recipe"]["totalNutrients"]["CHOCOF.net"].to_f.round(1)
     )
-    recipe.photo.attach(io: photo, filename: "#{recipe.title.split.join('_')}.png", content_type: 'image/png')
     recipe.save!
     puts "#{recipe.title} added succesfully\n"
 
