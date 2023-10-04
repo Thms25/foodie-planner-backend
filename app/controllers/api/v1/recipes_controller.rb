@@ -4,11 +4,11 @@ class Api::V1::RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.order(created_at: :desc)
-    render json: @recipes, methods: [:photo_key]
+    render json: @recipes
   end
 
   def show
-    render json: @recipe, methods: [:photo_key]
+    render json: @recipe
   end
 
   def create
@@ -36,7 +36,7 @@ class Api::V1::RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:title, :description, :prep_time, :rate, :servings, :category)
+    params.require(:recipe).permit(:title, :description, :prep_time, :rate, :servings, :category, :photo_url)
   end
 
   def set_recipe
